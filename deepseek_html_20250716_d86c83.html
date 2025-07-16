@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satya Doubt Solving Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            color: #333;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/1200px-Ashoka_Chakra.svg.png');
+            background-size: 150px;
+            background-position: right top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header {
+            background: #005b96;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 3px solid #ff9933;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border: 1px solid #005b96;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #005b96;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #003d66;
+        }
+        .faq {
+            margin: 20px 0;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            border: 1px solid #ff9933;
+        }
+        .logo {
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/1200px-Ashoka_Chakra.svg.png" alt="Ashoka Chakra" class="logo">Welcome to Satya Doubt-Solving App!</h1>
+        <p>Submit your doubts, and I'll answer them here!</p>
+    </header>
+
+    <div class="container">
+        <h2>Submit Your Doubt</h2>
+        <form action="https://formsubmit.co/kunalmunde45@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email (optional)">
+            <textarea name="doubt" placeholder="Type your doubt here..." required></textarea>
+            <button type="submit">Submit Doubt</button>
+            <!-- FormSubmit.co will send responses to your email -->
+            <input type="hidden" name="_next" value="https://yourwebsite.github.io/thanks.html">
+        </form>
+
+        <h2>Recently Answered Doubts</h2>
+        <div class="faq">
+            <h3>Q: How do I prepare for the upcoming science test?</h3>
+            <p><strong>A:</strong> Focus on chapters 3 and 5, practice diagrams, and review class notes.</p>
+        </div>
+        <div class="faq">
+            <h3>Q: When is the next sports event?</h3>
+            <p><strong>A:</strong> The inter-school competition is on [date]. Stay tuned!</p>
+        </div>
+    </div>
+</body>
+</html>

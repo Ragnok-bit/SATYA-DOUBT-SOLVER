@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubt Solving Portal - Get Your Questions Answered</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #388E3C;
+        }
+        .faq {
+            margin: 25px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        .faq h3 {
+            color: #2E7D32;
+            margin-top: 0;
+        }
+        .ad-container {
+            background: #f8f8f8;
+            border: 1px dashed #ccc;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .ad-label {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .subject-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .subject-tag {
+            background: #E8F5E9;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #2E7D32;
+            cursor: pointer;
+        }
+        .subject-tag:hover {
+            background: #C8E6C9;
+        }
+        .success-message {
+            background: #E8F5E9;
+            color: #2E7D32;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Doubt-Solving Portal</h1>
+        <p>Get your academic questions answered quickly and clearly!</p>
+    </header>
+
+    <div class="container">
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- AdSense Display Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <div class="success-message" id="successMessage">
+            Your doubt has been submitted successfully! We'll answer it soon.
+        </div>
+
+        <h2>Submit Your Doubt</h2>
+        <form id="doubtForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email (for response notification)">
+            <select name="subject" required>
+                <option value="">Select Subject</option>
+                <option value="math">Mathematics</option>
+                <option value="science">Science</option>
+                <option value="english">English</option>
+                <option value="history">History</option>
+                <option value="computer">Computer Science</option>
+                <option value="other">Other</option>
+            </select>
+            <textarea name="doubt" placeholder="Type your doubt in detail..." rows="5" required></textarea>
+            <div class="subject-tags">
+                <div class="subject-tag">Algebra</div>
+                <div class="subject-tag">Geometry</div>
+                <div class="subject-tag">Physics</div>
+                <div class="subject-tag">Chemistry</div>
+                <div class="subject-tag">Biology</div>
+                <div class="subject-tag">Grammar</div>
+            </div>
+            <button type="submit">Submit Doubt</button>
+        </form>
+
+        <div class="ad-container">
+            <div class="ad-label">Sponsored</div>
+            <!-- AdSense In-Article Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <h2>Recently Answered Doubts</h2>
+        <div class="faq">
+            <h3>Q: How do I solve quadratic equations using the quadratic formula?</h3>
+            <p><strong>A:</strong> The quadratic formula is x = [-b ± √(b²-4ac)]/2a. First identify coefficients a, b, and c from your equation in the form ax²+bx+c=0. Plug these values into the formula, calculate the discriminant (b²-4ac), then solve for both roots using the + and - versions.</p>
+            <p class="meta">Subject: Mathematics • Answered 2 days ago</p>
+        </div>
+        <div class="faq">
+            <h3>Q: What's the difference between mitosis and meiosis?</h3>
+            <p><strong>A:</strong> Mitosis produces two genetically identical diploid daughter cells for growth and repair, while meiosis produces four genetically unique haploid gametes (sex cells) for reproduction. Mitosis has one division, meiosis has two.</p>
+            <p class="meta">Subject: Biology • Answered 5 days ago</p>
+        </div>
+
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- AdSense Link Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="link"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <div class="faq">
+            <h3>Q: How can I improve my essay writing skills?</h3>
+            <p><strong>A:</strong> Practice regularly, read good writing, plan your essays with outlines, focus on clear thesis statements, use specific examples, vary sentence structure, and always proofread. Also, ask teachers for feedback on your work.</p>
+            <p class="meta">Subject: English • Answered 1 week ago</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('doubtForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real app, you would send this data to your server
+            // For demo purposes, we'll just show a success message
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // Scroll to the success message
+            document.getElementById('successMessage').scrollIntoView({
+                behavior: 'smooth'
+            });
+            
+            // Reset form
+            this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(function() {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 5000);
+            
+            // Here you would typically send the form data to your backend
+            // Example using Fetch API:
+            /*
+            fetch('your-backend-endpoint', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: this.name.value,
+                    email: this.email.value,
+                    subject: this.subject.value,
+                    doubt: this.doubt.value
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                document.getElementById('successMessage').style.display = 'block';
+                this.reset();
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('There was an error submitting your doubt. Please try again.');
+            });
+            */
+        });
+
+        // Subject tag click handler
+        document.querySelectorAll('.subject-tag').forEach(tag => {
+            tag.addEventListener('click', function() {
+                const textarea = document.querySelector('textarea[name="doubt"]');
+                textarea.value += (textarea.value ? ' ' : '') + this.textContent;
+                textarea.focus();
+            });
+        });
+    </script>
+</body>
+</html>
